@@ -26,7 +26,7 @@ iniciar2agentes()
 
 red = red(1,a)
 
-red.introducir()
+#red.introducir()
 
 del a
 
