@@ -210,7 +210,7 @@ class red:
         file = m.upload("model.json")
         file = m.upload("model.h5")
         print("Modelo Guardado!")
-
+        ##
     def cargar(self):
         
         def custom_activation(x):
