@@ -1,10 +1,4 @@
-
-from itertools import groupby, chain
-import math
 import pickle
-import random
-import numpy
-import sys
 
 
 NONE = '.'
