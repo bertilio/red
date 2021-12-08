@@ -7,7 +7,7 @@ import threading
 from keras.utils.generic_utils import get_custom_objects
 from keras.layers import Activation
 from mega import Mega
-
+import pickle
 mega = Mega()
 m = mega.login("albertovicentedelegido@gmail.com", "USOCw8KsCIO")
 
@@ -28,6 +28,22 @@ class red:
         self.q2=[]
         self.q3=[]
 
+
+
+    def guardar(self,archivo): 
+
+        archivo = open(archivo+'.pickle','wb')
+        array = [self.data,self.targets]
+        sys.setrecursionlimit(100000)
+        pickle.dump(array,archivo)
+        archivo.close()
+
+    def cargar(self,archivo):
+
+        archivo = open(archivo+'.pickle','rb')
+        array = pickle.load(archivo)
+        self.data = array[0] 
+        self.targets = array[1] 
 
     def thread_function(self,indice,array):
 
