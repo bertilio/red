@@ -13,8 +13,9 @@ def iniciar2agentes():
 
 def cargar():
     a.cargar("agente1")
+    print("AGENTE 1 CARGADO")
     a2.cargar("agente2")    
-
+    print("AGENTE 2 CARGADO")
 
         
 
@@ -32,6 +33,7 @@ red = red(1,a)
 
 red.introducir()
 
+del a
 
 red.entrenar(1000000)
 
