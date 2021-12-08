@@ -1,2 +1,2 @@
 mega.py
-tensorflow
+tensorflow-cpu
