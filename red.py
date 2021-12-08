@@ -30,7 +30,7 @@ class red:
 
 
 
-    def guardar(self,archivo): 
+    def guardarDatos(self,archivo): 
 
         archivo = open(archivo+'.pickle','wb')
         array = [self.data,self.targets]
@@ -38,7 +38,7 @@ class red:
         pickle.dump(array,archivo)
         archivo.close()
 
-    def cargar(self,archivo):
+    def cargarDatos(self,archivo):
 
         archivo = open(archivo+'.pickle','rb')
         array = pickle.load(archivo)
