@@ -19,7 +19,6 @@ def cargar():
 
 iniciar2agentes()
 
-cargar()
 
 
 
